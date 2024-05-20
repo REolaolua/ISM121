@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+   }
+   body{
+    width: 100%;
+     background: url(./background.jpg);
+   }
+
+
+   header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+ul{
+   display: flex;
+   list-style-type: none;
+   align-items: center;
+
+}
+
+
+    ul li a{
+        
+        display: flex;
+        padding: 0px  20px;
+        text-decoration: none;
+        color: black;
+      }
+
+      ul li a::after{
+         content:'';
+         display: block;
+         height: 4xp;
+         width: 0;
+         background-color: black;
+         transition: all .5s;
+
+      }
+
+      ul li a:hover::after{
+       width: 100%;
+
+
+      }
